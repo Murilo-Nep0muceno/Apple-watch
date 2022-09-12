@@ -1,0 +1,48 @@
+.introduction{
+    max-width: 1200px;
+    padding: 20px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.introduction h1{
+    font-size: 4.5rem;
+    line-height: 1.125;
+} 
+
+.introduction p{
+    font-size: 1.5rem;
+    color: #525252;
+    margin: 20px 0;
+}
+
+.introduction a{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #ffb311;
+    color: #141414;
+    border-radius: 3px;
+}
+
+@media(max-width:956px){
+    .introduction h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:600px){
+    .introduction{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .introduction img{
+        max-width: 70%;
+    }
+}
